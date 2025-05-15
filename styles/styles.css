@@ -1,3 +1,16 @@
+:root {
+    --primary-color: darkblue;
+    --text-color-light: white;
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-large: 1rem;
+    --image-width: 150px;
+    --box-shadow: 0 0 30px gray;
+    --borde-color: #ccc;
+}
+
+/* Review your course home page CSS a look for colors, fonts, sizes, and other values that are repeated */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +19,26 @@
 
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
 }
 
 nav a {
-    color: white;
+    color: var(--text-color-light);
     display: block;
-    padding: 20px;
+    padding: var(--padding-medium);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
 p {
@@ -37,7 +50,7 @@ main {
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
     float: right;
 }
@@ -49,9 +62,9 @@ p {
 aside {
     position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
+    margin: var(--padding-large);
+    border: 1px solid var(--borde-color);
+    padding: var(--padding-large);
     background-color: #f9f9f9;
     color: #333;
     text-align: center;
@@ -77,8 +90,8 @@ footer {
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
-    padding: 1rem;
+    margin: var(--padding-large);
+    padding: var(--padding-large);
     background-color: aqua;
 }
 
