@@ -17,8 +17,8 @@ h1 {
 
 .herodiv {
     margin: 10px auto;
-    /* position: relative; */
-    /* If removed, what happens?  The image is outside the div.*/
+    position: relative;
+
 }
 
 .herodiv img {

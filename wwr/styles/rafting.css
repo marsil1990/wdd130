@@ -29,6 +29,8 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h1,
@@ -90,4 +92,96 @@ h1 {
     margin-left: 16px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 30px 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / 4;
+}
+
+.history p {
+    padding: 0;
+    margin: 0;
+}
+
+.history img {
+    width: 220px;
+    height: auto;
+    grid-column: 2 / 1 span;
+    grid-row: 2 / 1 span;
+    padding: 5px;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1r));
+    justify-content: space-between;
+}
+
+.adventure h2 {
+    justify-self: center;
+    grid-column: 1 / 6;
+}
+
+
+
+.adventure img {
+    width: 150px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+footer p {
+    margin-left: 30%;
+}
+
+footer nav {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+footer img {
+    width: 2em;
+    height: 2em;
 }
