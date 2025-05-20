@@ -148,7 +148,7 @@ nav a {
 
 .adventure {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1r));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-content: space-between;
 }
 
