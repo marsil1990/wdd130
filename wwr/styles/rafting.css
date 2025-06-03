@@ -321,8 +321,8 @@ footer p {
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
+    background-color: black;
+    color: white;
     font-weight: bold;
     border: none;
     border-radius: 4px;
@@ -356,6 +356,210 @@ footer a {
 }
 
 footer a:hover {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
+
+
+
+/*Home*/
+.home-hero article {
+    margin-left: 4em;
+    margin-bottom: 7em;
+}
+
+.home-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 840px;
+}
+
+.home-adventure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.home-sections h2 {
+    width: 100%;
+    height: 1.5em;
+    text-align: center;
+}
+
+.home-adventure figure {
+    width: 50%;
+    padding: 0.5em;
+}
+
+.home-adventure img {
+    width: 100%;
+    height: 120px;
+}
+
+section form {
+    display: grid;
+    gap: 12px;
+    max-width: 400px;
+    margin: 10px auto;
+    height: 300px;
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+section form label {
+    font-weight: bold;
+}
+
+section form input[type="text"],
+section form input[type="email"] {
+    padding: 5px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+section form button {
+    width: 30%;
+    justify-self: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+
+section form button:hover {
+    background-color: var(--accent1-color);
+}
+
+.home-trips {
+    justify-items: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px auto;
+
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Trip page */
+
+.trips-page .hero h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    opacity: 1;
+    background-color: var(--accent1-color);
+    color: #000000;
+    height: 1.7em;
+}
+
+.trips-page .hero article {
+    position: absolute;
+    margin-left: 4em;
+    margin-bottom: 7em;
+    left: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 600px;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.trips-page .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.trips-page .cta-button:hover {
+    background: var(--accent1-color);
+}
+
+.trips-page .adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.trips-page .adventure figure {
+    text-align: center;
+}
+
+.trips-page .adventure img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trips-page .adventure figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.trips-page section h2,
+.trips-page section p {
+    text-align: center;
+}
+
+.trips-page section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.trips-page section table th,
+.trips-page section table td {
+    border: 1px solid var(--accent2-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.trips-page section table th {
+    background-color: var(--primary-color);
+    color: #000000;
+}
+
+.trips-page footer .wireframe {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.trips-page footer .wireframe a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.trips-page footer .wireframe a:hover {
     color: var(--accent1-color);
     text-decoration: none;
 }
